@@ -19,7 +19,7 @@
 						</ul>
 					</div>
 					<div class="header-logo">
-						<a href="index.html"><img src="img/logo.png" alt="Логотип" width="137" height="70"></a>
+						<a><img src="img/logo.png" alt="Логотип" width="137" height="70"></a>
 					</div>
 					<div class="navigation-right">
 						<ul>
@@ -27,34 +27,32 @@
         				<a href="#">Карта штата</a>
 							</li>
 							<li>
-        				<a href="#">Гостиницы</a>
+        				<a href="catalog.html">Гостиницы</a>
         			</li>
 						</ul>
 					</div>
 				</nav>
 				<div class="promo">
 					<div class="container">
-						<img src="#" alt="welcome" width="256" height="89">
-						<img src="#" alt="sedona" width="460" height="80">
-						<img src="#" alt="slogan" width="300" height="81">
+						<img src="#" alt="welcome" width="458" height="351">
 					</div>
 				</div>
 			</div>
 		</header>
 		<div class="text">
 			<div class="container">
-				<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<h1>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
 		</div>
 		<div class="index-content">
 			<div class="index-content-left">
 				<h2 class="index-content-title">Настоящий городок</h2>
-				<p>— №1 —</p>
+				<p>&mdash; №1 &mdash;</p>
 				<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="index-content-right">
-      	<a href="#"><img src=# alt="gallery" width="512" height="259"></a>
+				<img src=# alt="gallery" width="512" height="259">
       </div>
 		</div>
 		<section class="features">
@@ -72,14 +70,14 @@
 					<p>Не только китайского, но и местного производства!</p>
 				</li>
 			</ul>
-    </section>
+		</section>
 		<div class="index-content">
 			<div class="index-content-left">
-				<a href="#"><img src=# alt="gallery" width="512" height="259"></a>
+				<img src=# alt="gallery" width="512" height="259">
       </div>
       <div class="index-content-right">
 				<h2 class="index-content-title">Там есть мост дьявола</h2>
-				<p>— №2 —</p>
+				<p>&mdash; №2 &mdash;</p>
 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
 		</div>
@@ -87,17 +85,17 @@
 			<ul>
 				<li class="features-item feature-area">
       		<h2 class="feature-title">Небольшая площадь</h2>
-					<p>— №3 —</p>
+					<p>&mdash; №3 &mdash;</p>
 					<p>ВСЕ достопримечательности находятся очень близко</p>
 				</li>
 				<li class="features-item feature-road">
       		<h2 class="feature-title">Красивая дорога</h2>
-					<p>— №4 —</p>
+					<p>&mdash; №4 &mdash;</p>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
 				<li class="features-item feature-tourists">
       		<h2 class="feature-title">Мало туристов</h2>
-					<p>— №5 —</p>
+					<p>&mdash; №5 &mdash;</p>
 					<p>Большинство едет в гранд каньон и толпится там</p>
 				</li>
 			</ul>
@@ -109,23 +107,23 @@
 			</div>
 		</div>
 		<div class="search-hotel">
-			<p>ПОИСК ГОСТИНИЦЫ В седоне</p>
 			<form class="hotel" action="#" method="post">
-				Дата заезда:<input type="text" name="check-in" id="check-in" value="24 апреля 2017">
-				Дата выезда:<input type="text" name="check-out" id="check-out" value="4 июля 2017">
-				<div class="adults">
-					<p>Взрослые:</p>
-    			<span class="minus">-</span>
-    			<input type="text" value="2" size="5"/>
+				<fieldset>
+					<p>ПОИСК ГОСТИНИЦЫ В седоне</p>
+					<label for="check-in">Дата заезда:</label>
+					<input type="text" name="check-in" id="check-in" value="24 апреля 2017">
+					<label for="check-out">Дата выезда:</label>
+					<input type="text" name="check-out" id="check-out" value="4 июля 2017">
+					<label for="adults">Взрослые:</label>
+					<span class="minus">-</span>
+    			<input type="text" name="adults" id="adults" value="2" size="5">
     			<span class="plus">+</span>
-				</div>
-				<div class="children">
-					<p>Дети:</p>
-    			<span class="minus">-</span>
-    			<input type="text" value="0" size="5"/>
+					<label for="children">Дети:</label>
+					<span class="minus">-</span>
+    			<input type="text" name="children" id="children" value="0" size="5">
     			<span class="plus">+</span>
-				</div>
-				<input type="submit" value="Найти">
+					<input type="submit" value="Найти">
+				</fieldset>
 			</form>
 		</div>
 		<div class="footer">
