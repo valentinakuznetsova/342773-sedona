@@ -60,19 +60,29 @@
 						<label for="house-type-apartment">Апартаменты</label>
 					</div>
         </fieldset>
+				<fieldset>
+					<h3>Стоимость в сутки (Р):</h3>
+					<div>
+						<label for="start">От</label><input type=«text» id="start" placeholder=«0»>
+					</div>
+					<div>
+						<label for="finish">До</label><input type=«text» id="finish" placeholder=«3000»>
+					</div>
+					<div class="range"></div>
+					<input type="submit" value="Показать">
+				</fieldset>
 			</form>
-			<div class="slider"></div>
 		</div>
 		<div class="result">
 			<h2>Найдено:3</h2>
 			<ul>
 				<li>Сортировка:</li>
-				<li><a>По цене</a></li>
+				<li><a href="#">По цене</a></li>
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По рейтингу</a></li>
 			</ul>
 			<div class="arrows">
-				<a>&uarr;</a>
+				<a href="#">&uarr;</a>
 				<a href="#">&darr;</a>
 			</div>
 		</div>
