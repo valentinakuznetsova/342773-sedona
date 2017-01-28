@@ -2,17 +2,18 @@ body {
 	font-family: PT Sans, sans-serif;
 	font-size: 14px;
 	line-height: 21px;
-	color: #000000;
-	font-weight: bold;
-}
-.features-name {
-	font-size: 30px;
-	line-height: 42px;
-	color:#f7f4f1;
+	color: #333333;
+	font-weight: normal;
 }
 .index-content-title {
-	font-size: 30px;
-	line-height: 42px;
-	color:#000000;
+	font-size: 21px;
+	line-height: 21px;
+	color:#ffffff;
+	font-weight: bold;
 }
+.feature-title {
+	font-size: 21px;
+	line-height: 21px;
+	color:#000000;
+	font-weight: bold;
 }
