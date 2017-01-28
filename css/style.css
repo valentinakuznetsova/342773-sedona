@@ -17,3 +17,15 @@ body {
 	color:#000000;
 	font-weight: bold;
 }
+.form-title {
+	font-size: 16px;
+	line-height: 21px;
+	color:#ffffff;
+	font-weight: bold;
+}
+.catalog-title {
+	font-size: 21px;
+	line-height: 26px;
+	color:#000000;
+	font-weight: bold;
+}
