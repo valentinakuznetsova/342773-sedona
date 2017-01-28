@@ -1,0 +1,18 @@
+body {
+	font-family: PT Sans, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+	font-weight: bold;
+}
+.features-name {
+	font-size: 30px;
+	line-height: 42px;
+	color:#f7f4f1;
+}
+.index-content-title {
+	font-size: 30px;
+	line-height: 42px;
+	color:#000000;
+}
+}
