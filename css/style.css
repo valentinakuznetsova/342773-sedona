@@ -1,31 +1,35 @@
 body  {
-	font-family: "PT Sans", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	color: #333333;
-	font-weight: normal;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: normal;
 }
+
 .index-content-title  {
-	font-size: 21px;
-	line-height: 21px;
-	color: #ffffff;
-	font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
 }
+
 .feature-title  {
-	font-size: 21px;
-	line-height: 21px;
-	color: #000000;
-	font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
 }
+
 .form-title  {
-	font-size: 16px;
-	line-height: 21px;
-	color: #ffffff;
-	font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
 }
+
 .catalog-title  {
-	font-size: 21px;
-	line-height: 26px;
-	color: #000000;
-	font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
 }
