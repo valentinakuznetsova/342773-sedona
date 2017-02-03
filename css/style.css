@@ -4,6 +4,8 @@ body  {
   line-height: 21px;
   color: #333333;
   font-weight: normal;
+	margin: 0;
+  padding: 0;
 }
 
 .index-content-title  {
@@ -32,4 +34,84 @@ body  {
   line-height: 26px;
   color: #000000;
   font-weight: bold;
+}
+
+.container  {
+	width: 768px;
+	margin: 0 auto;
+}
+
+.main-header .container  {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-header  {
+	height: 56px;
+	margin-bottom: 58px;
+}
+
+.main-navigation  {
+  width: 676px;
+}
+
+.header-logo  {
+	width: 138px;
+}
+
+.features  {
+	display: flex;
+	justify-content: space-between;
+}
+
+.features-item  {
+	width: 300px;
+}
+
+.index-content  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-content form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-content-text  {
+	flex-grow: 1;
+}
+
+index-content-photo  {
+	flex-grow: 2;
+}
+
+.main-footer .container  {
+	display: flex;
+	
+}
+
+.footer-hashtag  {
+	width: 256px;
+}
+
+.footer-social  {
+	width: 256px;
+}
+
+.footer-copyright  {
+	width: 256px;
+}
+
+.result  {
+	display: flex;
+}
+
+.catalog-item  {
+	display: flex;
+	flex-direction: column;
+}
+.item {
+	display: flex;
+	justify-content: space-between;
 }
