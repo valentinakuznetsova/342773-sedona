@@ -1,9 +1,10 @@
+
+/* Общие стили для страницы */
 body  {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  font-weight: normal;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -38,33 +39,36 @@ body  {
   font-weight: bold;
 }
 
+/* Стиль контейнера*/
+
 .container  {
-	width: 768px;
+	min-width: 768px;
 	margin: 0 auto;
+  background-color: #ffffff;
 }
+
+/* Стилизация шапки сайта */
 
 .main-header  {
-	display: flex;
-	justify-content: space-between;
-	height: 56px;
-	margin-bottom: 58px;
-	color: #000000;
-	background-color: #ffffff;
+  position: relative;
+  background: #ffffff;
+  color: #000000;
+  width: 768px; 
 }
 
-.main-navigation a  {
-	display: block;
-  padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 46px;
-	padding-right: 13px;
-  color: #000000;
-  text-decoration: none;
+.header-logo  {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  width: 138px;
+  height: 70px;
+  margin-left: -69px;
+  /*
+  font-size: 0;
+  line-height: 0; */
 }
 
 .main-navigation ul  {
-  display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -73,17 +77,26 @@ body  {
 
 .main-navigation li  {
   display: inline-block;
-  font-size: 14px;
-  line-height: 26px;
   vertical-align: top;
+  width: 20%;
 }
 
-.header-logo  {
-	width: 138px;
-	position: absolute;
-	padding-left: 312px;
-	padding-right: 312px;
+.main-navigation a  {
+  display: block;
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
 }
+
+.main-navigation li:nth-child(2)  {
+  margin-right: 20%;
+}
+
+/* Стили главной страницы */
 
 .features  {
 	display: flex;
@@ -111,7 +124,7 @@ body  {
 .index-content-photo  {
 	flex-grow: 2;
 }
-
+/*Стили подвала  */
 .main-footer .container  {
 	display: flex;
 }
@@ -125,14 +138,72 @@ body  {
 }
 
 .footer-copyright  {
-	width: 256px;
+  width: 256px;
 }
 
-.result .container  {
-	display: flex;
-  justify-content: space-between;
-  
+/* Стили сортировки каталога*/
+
+.catalog-row  {
+  display: flex;
+  justify-content: flex-start;
+  width: 768px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  }
+
+.catalog-column-left  {
+  width: 135px;
 }
+
+.catalog-column-right  {
+  width: 110px;
+  text-align: right;
+}
+
+.catalog-column-middle  {
+  margin-left: 165px;
+  margin-right: 110px;
+}
+
+.catalog-header h2  {
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-type  {
+  font-size: 0;
+}
+
+.sort-label  {
+  display: inline-block;
+  vertical-align: top;
+  width: 114px;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+.sort-type ul  {
+  display: inline-block;
+  vertical-align: top;
+  /*min-width: 105px;*/
+  /*max-width: 70%;*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-type a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  opacity: .3;
+}
+
+/* Стили для основного наполнения каталога (гостиницы) */
 
 .item  {
 	display: flex;
