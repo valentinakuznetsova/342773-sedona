@@ -4,11 +4,15 @@ body  {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  min-width: 768px;
+  color: #333333;
+  background: #f2f2f2;
+}
+
+ul {
+  list-style: none;
 }
 
 .index-content-title  {
@@ -49,11 +53,50 @@ body  {
 
 /* Стилизация шапки сайта */
 
+.menu  {
+  min-height: 56px;
+  font-size: 0;
+  margin-left: 46px;
+  margin-right: 46px;
+}
+
+.menu a  {
+  display: inline-block;
+
+    width: 116px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.menu a:nth-child(2),
+.menu a:nth-child(5)  {
+  margin-left: 36px;
+}
+
+.menu .menu-logo {
+    position: relative;
+    z-index: 50;
+
+    height: 56px;
+    padding: 0;
+}
+
+/*
 .main-header  {
+  width: 768px;
   position: relative;
   background: #ffffff;
-  color: #000000;
-  width: 768px; 
+  color: #000000; 
 }
 
 .header-logo  {
@@ -63,9 +106,8 @@ body  {
   width: 138px;
   height: 70px;
   margin-left: -69px;
-  /*
   font-size: 0;
-  line-height: 0; */
+  line-height: 0;
 }
 
 .main-navigation ul  {
@@ -95,38 +137,119 @@ body  {
 .main-navigation li:nth-child(2)  {
   margin-right: 20%;
 }
+*/
 
 /* Стили главной страницы */
 
 .features  {
 	display: flex;
 	justify-content: space-between;
+  height: 330px;
+  width: 768px;
+  background: #ffffff;
 }
 
 .features-item  {
 	width: 300px;
+  padding: 0 46px;
+  padding-top: 35px;
+  text-align: center;
 }
 
-.index-content  {
-  display: flex;
-  justify-content: space-between;
+.feature-title {
+  position: relative;
+
+  margin: 20px auto;
+  padding-top: 103px;
+
+  font-size: 21px;
+  line-height: 26px;
+
+  font-weight: bold;
 }
 
-.index-content form  {
-  display: flex;
-  justify-content: space-between;
-}
 
-.index-content-text  {
-	flex-grow: 1;
-}
 
-.index-content-photo  {
-	flex-grow: 2;
-}
+
+
+
+
+
+
+
 /*Стили подвала  */
-.main-footer .container  {
-	display: flex;
+
+.main-footer  {
+  min-width: 768px;
+  margin: 0 auto;
+  color: #000000;
+  background: #fefefe;
+}
+
+.main-footer .footer-columns  {
+  display: flex;
+  padding: 30px 0;
+  text-align: center;
+  background: #fefefe;
+  width: 768px;
+}
+
+.footer-hashtag  {
+  padding: 17px 0;
+}
+
+.footer-hashtag a  {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-socials ul  {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.footer-socials li  {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 3px;
+}
+
+.btn-social  {
+  display:  block;
+  width: 46px;
+  height: 48px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.footer-copyright  {
+  padding: 6px 0;
+  font-size: 0;
+}
+
+.footer-copyright span,
+.footer-copyright .logo-htmlacademy  {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-copyright span  {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.logo-htmlacademy  {
+  width: 113px;
+  height: 39px;
+  margin: 4px 8px;
+  text-decoration: none;
+  /* добавить спрайт*/
 }
 
 .footer-hashtag  {
@@ -141,17 +264,27 @@ body  {
   width: 256px;
 }
 
+.row {
+  font-size: 0;
+}
+
+ul.row {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Стили сортировки каталога*/
 
 .catalog-row  {
   display: flex;
-  justify-content: flex-start;
-  width: 768px;
   padding-left: 46px;
   padding-right: 46px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
+  width: 768px;
+  background: #ffffff;
   }
 
 .catalog-column-left  {
@@ -161,11 +294,13 @@ body  {
 .catalog-column-right  {
   width: 110px;
   text-align: right;
+  margin-left: auto;
 }
 
 .catalog-column-middle  {
-  margin-left: 165px;
-  margin-right: 110px;
+  width: 431px;
+  /*margin-left: 165px;
+  margin-right: 110px;*/
 }
 
 .catalog-header h2  {
@@ -189,18 +324,23 @@ body  {
 .sort-type ul  {
   display: inline-block;
   vertical-align: top;
-  /*min-width: 105px;*/
-  /*max-width: 70%;*/
+  min-width: 105px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.sort-type li  {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 32px;
+  font-size: 12px;
+  line-height: 26px;
 
-.sort-type a {
-  position: relative;
+}
+.sort-type a  {
+  display: block;
   text-decoration: none;
   color: #000;
-  opacity: .3;
 }
 
 /* Стили для основного наполнения каталога (гостиницы) */
@@ -240,3 +380,217 @@ body  {
 .star-img  {
   background: #81b3d2 url("img/star.png") no-repeat center;
 }
+
+/* Стилизация блока hotels-filters (фильтры) */
+
+.hotels-filters  {
+  padding-top: 14px;
+  padding-bottom: 8px;
+  width: 768px;
+  height: 217px;
+
+  color: #ffffff;
+  background: #46525c url('../img/bg-hotels-filters.jpg') no-repeat 0 50%;
+  background-size: cover;
+}
+
+.hotels-filters h2  {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.filter-options  {
+  padding-left: 46px; /* 6% */
+  font-size: 0;
+}
+
+.options  {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 150px;
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+}
+
+.options ul  {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.options li  {
+  margin: 25px 0;
+}
+
+.options:first-child  {
+  margin-right: 115px; /* отступ от 2й колонки*/
+}
+
+.filter-cost  {
+  padding-right: 46px; /* 6,5*/
+  text-align: center;
+}
+
+.cost-group  {
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  font-size: 0;
+}
+
+.cost-group label  {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  padding: 5px 46px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.cost-input  {
+  max-width: 112px;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  background: transparent;
+}
+
+.column  {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 220px;
+  font-size: 14px;
+}
+
+.column-double  {
+    width: 450px;
+  }
+
+/*  Стилизация блока main-poster */
+
+.main-poster {
+  
+  height: 510px;
+  width: 768px;
+  background: #3d4c57 url("../img/promo-background.jpg") no-repeat 50% 30%;
+  background-size: cover;
+}
+
+.main-poster::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/background-mask.png') no-repeat;
+  background-size: 768px 57px;
+}
+
+.slogan {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  width: 458px;
+  height: 90px;
+  margin-top: 45px;
+  margin-left: -229px;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  background: transparent url('../img/promo-logo.png') no-repeat;
+}
+
+  .slogan-welcome {
+    top: 75px;
+    background-position: 0 0;
+  }
+
+  .slogan-sedona {
+    top: 207px;
+    background-position: 0 -132px;
+  }
+
+  .slogan-cite {
+    top: 337px;
+    background-position: 0 -262px;
+  }
+
+.intro {
+  padding: 31px 0;
+  background: #ffffff;
+  line-height: 26px;
+  width: 768px;
+  text-align: center;
+}
+
+.intro-title {
+    width: 450px;
+
+    margin: 28px auto;
+
+    font-size: 21px;
+
+    color: #000;
+  }
+
+  .intro p {
+    margin: 20px 0;
+  }
+
+/* Стилизация блока index-content*/
+
+.index-content  {
+  display: flex;
+  width: 768px;
+  min-height: 256px;
+  background: #eeeeee;
+}
+
+.index-content .index-content-text  {
+  padding: 0 38px;
+  padding-top: 35px;
+}
+
+.index-content-text  {
+  text-align: center;
+  width: 256px;
+}
+
+.feature-title-content  {
+  margin: 10px auto;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.index-content-text p  {
+  margin: 22px auto;
+}
+
+.features-open  {
+  color: #fff;
+  background: #81b3d2;
+}
+
+.features-open .feature-title--content  {
+  margin-top: 17px;
+}
+
+.index-content-photo {
+  height: 256px;
+  width: 512px;
+  overflow: hidden;
+  background: #81b3d2;
+}
+
+/* */
+

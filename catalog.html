@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+	  $(function(){
+		$.pixlayout({clip: true, src: "img/sedona-hotels-768.png", show:true, center:true, top:0, left:0, pervious: false});
+  }); 
+  </script>
   </head>
   <body>
-		<header class="main-header">
-			<div class="main-header-layout container">
-				<div class="header-logo">
+    
+	    <header class="main-header container">
+			  
+				  <div class="header-logo">
 					<a href="index.html"><img src="img/main-logo.png" alt="Логотип" width="138" height="70"></a>
 				</div>
 				<nav class="main-navigation">
@@ -28,73 +37,84 @@
 						</li>
 					</ul>
 				</nav>
-			</div>
+			
 		</header>
-		<main class="container">
-			<div class="index-content">
+		<main>
+			<div class="hotels-filters container">
 				<form action="#" method="post">
-					<fieldset class="infrastructure">
-						<h3 class="form-title">Инфраструктура:</h3>
-						<div>
-							<input type="checkbox" name="infrastructure-pool" id="infrastructure-pool" checked>
-							<label for="infrastructure-pool">Бассейн</label>
-						</div>
-						<div>
-							<input type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
-							<label for="infrastructure-parking">Парковка</label>
-						</div>
-						<div>
-							<input type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi">
-							<label for="infrastructure-wifi">Wi-Fi</label>
-						</div>
+				<div class="filter-options column column-double container">
+					<fieldset class="options">
+						<h2 class="filter-title">Инфраструктура:</h2>
+						<ul>
+						<li>
+							<input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-pool" value="val-1" checked>
+							<label class="form-label" for="infrastructure-pool">Бассейн</label>
+						</li>
+						<li>
+							<input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-parking" value="val-2">
+							<label class="form-label" for="infrastructure-parking">Парковка</label>
+						</li>
+						<li>
+							<input class="form-checkbox" type="checkbox" name="infrastructure" id="infrastructure-wifi" value="val-3">
+							<label class="form-label" for="infrastructure-wifi">Wi-Fi</label>
+						</li>
+						</ul>
 					</fieldset>
-					<fieldset class="house-type">
-						<h3 class="form-title">Тип жилья:</h3>
-						<div>
-							<input type="checkbox" name="house-type-hotel" id="house-type-hotel" checked>
-							<label for="house-type-hotel">Гостиница</label>
-						</div>
-						<div>
-							<input type="checkbox" name="house-type-motel" id="house-type-motel" checked>
-							<label for="house-type-motel">Мотель</label>
-						</div>
-						<div>
-							<input type="checkbox" name="house-type-apartment" id="house-type-apartment" checked>
-							<label for="house-type-apartment">Апартаменты</label>
-						</div>
+					<fieldset class="options">
+						<h2 class="filter-title">Тип жилья:</h2>
+						<ul>
+						<li>
+							<input class="form-checkbox" type="checkbox" name="house-type-hotel" id="house-type-hotel" value="val-1" checked>
+							<label class="form-label" for="house-type-hotel">Гостиница</label>
+						</li>
+						<li>
+							<input class="form-checkbox" type="checkbox" name="house-type-motel" id="house-type-motel" value="val-2" checked>
+							<label class="form-label" for="house-type-motel">Мотель</label>
+						</li>
+						<li>
+							<input class="form-checkbox" type="checkbox" name="house-type-apartment" id="house-type-apartment" value="val-3" checked>
+							<label class="form-label" for="house-type-apartment">Апартаменты</label>
+						</li>
+						</ul>
 					</fieldset>
-					<fieldset>
-						<h3 class="form-title">Стоимость в сутки (Р):</h3>
-						<div>
-							<label for="start">От</label><input type=«text» id="start" placeholder=«0»>
+					</div>
+					<div class="filter-cost column">
+						<h2 class="filter-title">Стоимость в сутки (Р):</h2>
+						<div class="cost-control" id="cost-control">
+              <div class="cost-group">
+                <label>от <input class="cost-input cost-input-min" type="text" name="cost-from" value="0"></label>
+                <label>до <input class="cost-input cost-input-max" type="text" name="cost-to" value="3000"></label>
+              </div>
+						  <div class="range">
+							  <div class="scale">
+                  <button class="scale-slider scale-slider-min" type="button" tabindex="-1"></button>
+                  <button class="scale-slider scale-slider-max" type="button" tabindex="-1"></button>
+                </div>
+						  </div>
 						</div>
-						<div>
-							<label for="finish">До</label><input type=«text» id="finish" placeholder=«3000»>
-						</div>
-						<div class="range"></div>
-						<input type="submit" value="Показать">
-					</fieldset>
+						<button class="btn btn-light" type="submit">Показать</button>
+					</div>
 				</form>
 			</div>
 			<div class="result">
         <div class="catalog-header catalog-row container">
-          <h2 class="catalog-column-left">Найдено:3</h2>
+          <h2 class="catalog-column-left">Найдено: 3</h2>
           <div class="sort-type catalog-column-middle">
             <div class="sort-label">Сортировка:</div>
-            <ul>
-              <li><a href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По рейтингу</a></li>
-            </ul>
-          </div>
+              <ul>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li>
+              </ul>
+            </div>
           <div class="arrows catalog-column-right">
             <a href="#">&uarr;</a>
             <a href="#">&darr;</a>
           </div>
         </div>
 			</div>
-			<div class="catalog-item container">
-				<article class="item">
+			<div class="catalog-item">
+				<article class="item container">
 					<div class="hotel-photo">
 						<a href="#"><img src="img/amara-hotel.jpg" alt="Amara Resort & Spa" width="135" height="90"></a>
 					</div>
@@ -117,7 +137,7 @@
 						<div class="rating-value">Рейтинг:8,5</div>
 					</div>
 				</article>
-				<article class="item">
+				<article class="item container">
 					<div class="hotel-photo">
 						<a href="#"><img src="img/desert-hotel.jpg" alt="Desert Quail Inn" width="135" height="90"></a>
 					</div>
@@ -139,7 +159,7 @@
 						<div class="rating-value">Рейтинг:8,9</div>
 					</div>
 				</article>
-				<article class="item">
+				<article class="item container">
 					<div class="hotel-photo">
 						<a href="#"><img src="img/villas-hotel.jpg" alt="Villas at Poco Diablo" width="135" height="90"></a>
 					</div>
@@ -163,19 +183,23 @@
 			</div>
 		</main>
 		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-hashtag">
-					<span>#visitSEDONA</span>
+			<div class="footer-columns row container">
+				<div class="footer-hashtag column">
+					<a href="#">#visitsedona</a>
 				</div>
-				<div class="footer-social">
-					<a class="social-btn" href="#">Твиттер</a>
-					<a class="social-btn" href="#">Фейсбук</a>
-					<a class="social-btn" href="#">Ютуб</a>
+				<div class="footer-socials column">
+				  <ul>
+					  <li><a class="btn social-btn icon-twitter" href="#">Твиттер</a></li>
+					  <li><a class="btn social-btn icon-facebook" href="#">Фейсбук</a></li>
+					  <li><a class="btn social-btn icon-youtube" href="#">Ютуб</a></li>
+					</ul>
 				</div>
-				<div class="footer-copyright">
-					<span>WEBSITE by</span><a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.png" alt="HTML Academy" width="113" height="39"></a>
+				<div class="footer-copyright column">
+					<span>website by</span>
+					<a class="logo-htmlacademy" href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.png" alt="HTML Academy" width="113" height="39"></a>
 				</div>
 			</div>
 		</footer>
+		
   </body>
 	
